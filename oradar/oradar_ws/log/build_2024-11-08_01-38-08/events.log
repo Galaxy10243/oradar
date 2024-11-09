@@ -1,0 +1,767 @@
+[0.000000] (-) TimerEvent: {}
+[0.000167] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.000204] (oradar_lidar) JobQueued: {'identifier': 'oradar_lidar', 'dependencies': OrderedDict()}
+[0.000217] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/up/oradar_ws/install/openslam_gmapping')])}
+[0.000232] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.006128] (oradar_lidar) JobStarted: {'identifier': 'oradar_lidar'}
+[0.011578] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.011937] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/up/oradar_ws/src/openslam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/openslam_gmapping'], 'cwd': '/home/up/oradar_ws/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.017395] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'cmake'}
+[0.019024] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '/home/up/oradar_ws/src/oradar_ros', '-DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/oradar_lidar'], 'cwd': '/home/up/oradar_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.038337] (oradar_lidar) StderrLine: {'line': b'=============================================================\n'}
+[0.038669] (oradar_lidar) StderrLine: {'line': b'-- ROS Not Found, Ros Support is turned Off!\n'}
+[0.038755] (oradar_lidar) StderrLine: {'line': b'=============================================================\n'}
+[0.052513] (oradar_lidar) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.052670] (oradar_lidar) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.063575] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099812] (-) TimerEvent: {}
+[0.102341] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.105029] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.143663] (oradar_lidar) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.165602] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.166138] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.168993] (oradar_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.170869] (oradar_lidar) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.200463] (-) TimerEvent: {}
+[0.227204] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.233022] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.233239] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.234629] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.251994] (oradar_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.280691] (oradar_lidar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.281428] (oradar_lidar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.300475] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.300632] (-) TimerEvent: {}
+[0.301099] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.364959] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.368065] (oradar_lidar) StderrLine: {'line': b'=============================================================\n'}
+[0.368200] (oradar_lidar) StderrLine: {'line': b'-- ROS2 Found. ROS2 Support is turned On!\n'}
+[0.368241] (oradar_lidar) StderrLine: {'line': b'=============================================================\n'}
+[0.368489] (oradar_lidar) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.370702] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.371043] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.376292] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.391337] (openslam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.391447] (openslam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.400787] (-) TimerEvent: {}
+[0.434716] (oradar_lidar) StderrLine: {'line': b'CMake Deprecation Warning at sdk/CMakeLists.txt:36 (cmake_policy):\n'}
+[0.434868] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0053 will be removed from a future version\n'}
+[0.434907] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[0.434940] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.434970] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.435000] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.435046] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.435088] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.435143] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435177] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435208] (oradar_lidar) StderrLine: {'line': b'CMake Deprecation Warning at sdk/CMakeLists.txt:39 (cmake_policy):\n'}
+[0.435236] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0037 will be removed from a future version\n'}
+[0.435264] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[0.435291] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435318] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.435346] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.435373] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.435401] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.435428] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435455] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435486] (oradar_lidar) StderrLine: {'line': b'CMake Deprecation Warning at sdk/CMakeLists.txt:42 (cmake_policy):\n'}
+[0.435513] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0043 will be removed from a future version\n'}
+[0.435540] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[0.435568] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435595] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.435622] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.435649] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.435676] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.435703] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.435730] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.436164] (oradar_lidar) StdoutLine: {'line': b'-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) \n'}
+[0.449755] (oradar_lidar) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.458226] (oradar_lidar) StderrLine: {'line': b'CMake Deprecation Warning at sdk/cmake/install_package.cmake:101 (cmake_policy):\n'}
+[0.458346] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0026 will be removed from a future version\n'}
+[0.458385] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[0.458416] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.458445] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.458483] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.458512] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.458539] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.458567] (oradar_lidar) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.458594] (oradar_lidar) StderrLine: {'line': b'  sdk/CMakeLists.txt:105 (install_package)\n'}
+[0.458621] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.458649] (oradar_lidar) StderrLine: {'line': b'\n'}
+[0.501141] (-) TimerEvent: {}
+[0.501601] (oradar_lidar) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.519677] (oradar_lidar) StdoutLine: {'line': b'-- Generating done\n'}
+[0.524468] (oradar_lidar) StdoutLine: {'line': b'-- Build files have been written to: /home/up/oradar_ws/build/oradar_lidar\n'}
+[0.534449] (oradar_lidar) CommandEnded: {'returncode': 0}
+[0.534786] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'build'}
+[0.536697] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/up/oradar_ws/build/oradar_lidar', '--', '-j8', '-l8'], 'cwd': '/home/up/oradar_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.537557] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.546651] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[0.548122] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/up/oradar_ws/build/openslam_gmapping\n'}
+[0.552862] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[0.553464] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[0.553500] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/up/oradar_ws/build/openslam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/up/oradar_ws/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.581738] (oradar_lidar) StdoutLine: {'line': b'[ 60%] Built target oradar_sdk\n'}
+[0.584501] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[0.584604] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_base\x1b[0m\n'}
+[0.593148] (openslam_gmapping) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[0.594018] (openslam_gmapping) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[0.596132] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[0.597070] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[0.599347] (oradar_lidar) StdoutLine: {'line': b'[ 70%] Built target blocking_c_api_test\n'}
+[0.600473] (oradar_lidar) StdoutLine: {'line': b'[ 80%] Built target non-blocking_test\n'}
+[0.600782] (oradar_lidar) StdoutLine: {'line': b'[ 90%] Built target blocking_test\n'}
+[0.601299] (-) TimerEvent: {}
+[0.607377] (oradar_lidar) StdoutLine: {'line': b'[100%] Built target oradar_scan\n'}
+[0.617957] (oradar_lidar) CommandEnded: {'returncode': 0}
+[0.647789] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'install'}
+[0.657974] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/up/oradar_ws/build/oradar_lidar'], 'cwd': '/home/up/oradar_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.665560] (oradar_lidar) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[0.666941] (oradar_lidar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.667130] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/blocking_test\n'}
+[0.667423] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/non-blocking_test\n'}
+[0.667682] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/blocking_c_api_test\n'}
+[0.667870] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/datatype.h\n'}
+[0.668048] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/locker.h\n'}
+[0.668308] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/thread.h\n'}
+[0.668486] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/timer.h\n'}
+[0.668643] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/typedef.h\n'}
+[0.668801] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/utils.h\n'}
+[0.668966] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/v8stdint.h\n'}
+[0.669138] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/common/ChannelDevice.h\n'}
+[0.669315] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/math/angles.h\n'}
+[0.669485] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/ActiveSocket.h\n'}
+[0.669654] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/PassiveSocket.h\n'}
+[0.669825] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/SimpleSocket.h\n'}
+[0.670016] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/StatTimer.h\n'}
+[0.670199] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/common.h\n'}
+[0.670364] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/serial.h\n'}
+[0.670540] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h\n'}
+[0.670720] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h\n'}
+[0.670897] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h\n'}
+[0.671064] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h\n'}
+[0.671232] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ord_lidar_driver.h\n'}
+[0.671397] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ordlidar_protocol.h\n'}
+[0.671567] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h\n'}
+[0.671726] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/lib/liboradar_sdk.a\n'}
+[0.671994] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan\n'}
+[0.672418] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch\n'}
+[0.672553] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py\n'}
+[0.672690] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_gmapping.launch.py\n'}
+[0.672819] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch\n'}
+[0.672954] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py\n'}
+[0.673197] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz\n'}
+[0.673409] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar\n'}
+[0.673604] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar\n'}
+[0.673794] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh\n'}
+[0.673973] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv\n'}
+[0.674157] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh\n'}
+[0.674334] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv\n'}
+[0.674507] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash\n'}
+[0.674681] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh\n'}
+[0.674870] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh\n'}
+[0.675041] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv\n'}
+[0.675175] (oradar_lidar) StdoutLine: {'line': b'-- Symlinking: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/package.dsv\n'}
+[0.684792] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar\n'}
+[0.685027] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake\n'}
+[0.685208] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake\n'}
+[0.685409] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/package.xml\n'}
+[0.688113] (oradar_lidar) CommandEnded: {'returncode': 0}
+[0.701501] (-) TimerEvent: {}
+[0.733865] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[0.738888] (oradar_lidar) JobEnded: {'identifier': 'oradar_lidar', 'rc': 0}
+[0.763228] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] Built target sensor_base\n'}
+[0.772532] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_range\x1b[0m\n'}
+[0.772689] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_odometry\x1b[0m\n'}
+[0.782455] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[0.782611] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[0.782657] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[0.782693] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[0.799085] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[0.802214] (-) TimerEvent: {}
+[0.832117] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] Built target utils\n'}
+[0.902599] (-) TimerEvent: {}
+[0.972743] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libsensor_odometry.a\x1b[0m\n'}
+[0.999345] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] Built target sensor_odometry\n'}
+[1.003145] (-) TimerEvent: {}
+[1.051739] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libsensor_range.a\x1b[0m\n'}
+[1.079228] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] Built target sensor_range\n'}
+[1.088123] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scanmatcher\x1b[0m\n'}
+[1.098790] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o\x1b[0m\n'}
+[1.098975] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o\x1b[0m\n'}
+[1.099026] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o\x1b[0m\n'}
+[1.099089] (openslam_gmapping) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o\x1b[0m\n'}
+[1.103323] (-) TimerEvent: {}
+[1.203681] (-) TimerEvent: {}
+[1.304373] (-) TimerEvent: {}
+[1.405204] (-) TimerEvent: {}
+[1.505886] (-) TimerEvent: {}
+[1.606795] (-) TimerEvent: {}
+[1.707348] (-) TimerEvent: {}
+[1.807902] (-) TimerEvent: {}
+[1.900690] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libscanmatcher.a\x1b[0m\n'}
+[1.908395] (-) TimerEvent: {}
+[1.929132] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] Built target scanmatcher\n'}
+[1.937905] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gridfastslam\x1b[0m\n'}
+[1.949020] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o\x1b[0m\n'}
+[1.949201] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o\x1b[0m\n'}
+[1.949251] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o\x1b[0m\n'}
+[1.949287] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o\x1b[0m\n'}
+[2.009018] (-) TimerEvent: {}
+[2.109874] (-) TimerEvent: {}
+[2.210444] (-) TimerEvent: {}
+[2.311373] (-) TimerEvent: {}
+[2.412163] (-) TimerEvent: {}
+[2.512602] (-) TimerEvent: {}
+[2.613176] (-) TimerEvent: {}
+[2.713895] (-) TimerEvent: {}
+[2.808458] (openslam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libgridfastslam.a\x1b[0m\n'}
+[2.814455] (-) TimerEvent: {}
+[2.838257] (openslam_gmapping) StdoutLine: {'line': b'[100%] Built target gridfastslam\n'}
+[2.848279] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[2.872155] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'install'}
+[2.872254] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/up/oradar_ws/build/openslam_gmapping'], 'cwd': '/home/up/oradar_ws/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.880359] (openslam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.880583] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[2.880746] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[2.880865] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include/\n'}
+[2.881002] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping\n'}
+[2.881053] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log\n'}
+[2.881087] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log/configuration.h\n'}
+[2.881200] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log/sensorlog.h\n'}
+[2.881353] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils\n'}
+[2.881431] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/macro_params.h\n'}
+[2.881548] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/autoptr.h\n'}
+[2.881659] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/stat.h\n'}
+[2.881702] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/gvalues.h\n'}
+[2.881735] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/commandline.h\n'}
+[2.881833] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/point.h\n'}
+[2.881918] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor\n'}
+[2.882037] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base\n'}
+[2.882123] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h\n'}
+[2.882237] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h\n'}
+[2.882284] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry\n'}
+[2.882318] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h\n'}
+[2.882459] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h\n'}
+[2.882534] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range\n'}
+[2.882577] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h\n'}
+[2.882914] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h\n'}
+[2.882977] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher\n'}
+[2.883037] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h\n'}
+[2.883108] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h\n'}
+[2.883245] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h\n'}
+[2.883299] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/particlefilter\n'}
+[2.883443] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h\n'}
+[2.883508] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid\n'}
+[2.883589] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/harray2d.h\n'}
+[2.883707] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/map.h\n'}
+[2.883784] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/accessstate.h\n'}
+[2.883905] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/array2d.h\n'}
+[2.883990] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam\n'}
+[2.884026] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h\n'}
+[2.884058] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx\n'}
+[2.884089] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h\n'}
+[2.884287] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping\n'}
+[2.884463] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping\n'}
+[2.884592] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh\n'}
+[2.884720] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv\n'}
+[2.884872] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh\n'}
+[2.884982] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv\n'}
+[2.885100] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash\n'}
+[2.885216] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh\n'}
+[2.885372] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh\n'}
+[2.885496] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv\n'}
+[2.885594] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv\n'}
+[2.885763] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping\n'}
+[2.885924] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.886053] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.886190] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake\n'}
+[2.886314] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake\n'}
+[2.886401] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/package.xml\n'}
+[2.886638] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libgridfastslam.a\n'}
+[2.887104] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libscanmatcher.a\n'}
+[2.887400] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[2.887488] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[2.887571] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_base.a\n'}
+[2.887738] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[2.887790] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[2.887905] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_odometry.a\n'}
+[2.888051] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_range.a\n'}
+[2.888314] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libutils.a\n'}
+[2.888483] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[2.888540] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[2.890437] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[2.914990] (-) TimerEvent: {}
+[2.923838] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 0}
+[2.924350] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[2.931130] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[2.932659] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/up/oradar_ws/src/slam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/slam_gmapping'], 'cwd': '/home/up/oradar_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/up/oradar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy')]), 'shell': False}
+[2.975611] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[3.014935] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[3.015093] (-) TimerEvent: {}
+[3.017569] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.074445] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.074944] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.115561] (-) TimerEvent: {}
+[3.131669] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.137380] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.137580] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.138997] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.205040] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.205929] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.215946] (-) TimerEvent: {}
+[3.270663] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.276501] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.276801] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.277301] (slam_gmapping) StderrLine: {'line': b' -fuse-ld=lld -Wl,--disable-new-dtags\n'}
+[3.278423] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.293996] (slam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.294157] (slam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.316412] (-) TimerEvent: {}
+[3.396139] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[3.413890] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.416923] (-) TimerEvent: {}
+[3.417882] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.483588] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[3.503126] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[3.517061] (-) TimerEvent: {}
+[3.551748] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.580669] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.617592] (-) TimerEvent: {}
+[3.656235] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[3.667131] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[3.709308] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.710116] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.711281] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.718111] (-) TimerEvent: {}
+[3.774950] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.775194] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.818324] (-) TimerEvent: {}
+[3.836526] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.836766] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.888671] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.888938] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.918880] (-) TimerEvent: {}
+[3.948182] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.948929] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.019163] (-) TimerEvent: {}
+[4.120038] (-) TimerEvent: {}
+[4.220585] (-) TimerEvent: {}
+[4.251186] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[4.259032] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[4.262932] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[4.278963] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[4.320824] (-) TimerEvent: {}
+[4.321845] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[4.369723] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[4.372693] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.421153] (-) TimerEvent: {}
+[4.428512] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.428781] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/up/oradar_ws/src/slam_gmapping/include\n'}
+[4.428837] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.429354] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.430056] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.430693] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[4.431880] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.431946] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.432629] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.436050] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.447951] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[4.449315] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/up/oradar_ws/build/slam_gmapping\n'}
+[4.457636] (slam_gmapping) CommandEnded: {'returncode': 0}
+[4.458221] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[4.459900] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/up/oradar_ws/build/slam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/up/oradar_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/up/oradar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy')]), 'shell': False}
+[4.497862] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target slam_gmapping\x1b[0m\n'}
+[4.498049] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target transform\x1b[0m\n'}
+[4.521443] (-) TimerEvent: {}
+[4.588774] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/transform.dir/src/transform.cpp.o\x1b[0m\n'}
+[4.589116] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[4.621941] (-) TimerEvent: {}
+[4.722449] (-) TimerEvent: {}
+[4.823238] (-) TimerEvent: {}
+[4.923956] (-) TimerEvent: {}
+[5.024374] (-) TimerEvent: {}
+[5.125165] (-) TimerEvent: {}
+[5.225807] (-) TimerEvent: {}
+[5.326538] (-) TimerEvent: {}
+[5.427238] (-) TimerEvent: {}
+[5.510584] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[5.510785] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.510847] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.510893] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.510952] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[5.511001] (slam_gmapping) StderrLine: {'line': b'  140 |  \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[5.511044] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.511087] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.511131] (slam_gmapping) StderrLine: {'line': b'  142 |   \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[5.511175] (slam_gmapping) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.513815] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:10\x1b[m\x1b[K,\n'}
+[5.513930] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.514030] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.514067] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/point.h:\x1b[m\x1b[K At global scope:\n'}
+[5.514098] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/point.h:205:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.514128] (slam_gmapping) StderrLine: {'line': b'  205 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.514202] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.514351] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:4\x1b[m\x1b[K,\n'}
+[5.514398] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[5.514434] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.514464] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.514494] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.514522] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h:21:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.514559] (slam_gmapping) StderrLine: {'line': b'   21 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.514588] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.514615] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[5.514642] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.514670] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.514697] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.514723] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:23:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.514751] (slam_gmapping) StderrLine: {'line': b'   23 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.514778] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.514805] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:7\x1b[m\x1b[K,\n'}
+[5.514832] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.514863] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.514890] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.514917] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.514950] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.514977] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.516020] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:8\x1b[m\x1b[K,\n'}
+[5.516075] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.516110] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.516184] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.516252] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangesensor.h:33:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.516291] (slam_gmapping) StderrLine: {'line': b'   33 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.516320] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.516348] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:9\x1b[m\x1b[K,\n'}
+[5.516375] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.516403] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.516473] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.516604] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.516640] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.516670] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.516699] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:10\x1b[m\x1b[K,\n'}
+[5.516727] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.516755] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.516782] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.516814] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangereading.h:24:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.516843] (slam_gmapping) StderrLine: {'line': b'   24 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.516870] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.516897] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:11\x1b[m\x1b[K,\n'}
+[5.516928] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.516955] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.516982] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.517010] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/configuration.h:15:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.517037] (slam_gmapping) StderrLine: {'line': b'   15 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.517064] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.518392] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.518444] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.518478] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.518511] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.518540] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.518569] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.519961] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:5\x1b[m\x1b[K,\n'}
+[5.520011] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.520045] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.520075] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.520104] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.520137] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.520165] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/accessstate.h:6:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.520200] (slam_gmapping) StderrLine: {'line': b'    6 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.520227] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.521753] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:6\x1b[m\x1b[K,\n'}
+[5.521808] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.521861] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.521905] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.521943] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.521972] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.522000] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/array2d.h:185:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.522055] (slam_gmapping) StderrLine: {'line': b'  185 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.522087] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.523495] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.523561] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.523598] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.523630] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.523706] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.523787] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:262:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.523826] (slam_gmapping) StderrLine: {'line': b'  262 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.523857] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.523886] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:5\x1b[m\x1b[K,\n'}
+[5.523988] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[5.524026] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.524057] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.524085] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.524118] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.524145] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/autoptr.h:96:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.524173] (slam_gmapping) StderrLine: {'line': b'   96 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.524201] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.524661] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[5.524727] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.524764] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.524796] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.524827] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[5.524858] (slam_gmapping) StderrLine: {'line': b'  140 |  \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[5.524886] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.524914] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.524948] (slam_gmapping) StderrLine: {'line': b'  142 |   \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[5.524976] (slam_gmapping) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.527466] (-) TimerEvent: {}
+[5.527717] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[5.527772] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.527807] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.527837] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.527874] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.527902] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:197:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.527930] (slam_gmapping) StderrLine: {'line': b'  197 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.528012] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.528426] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:10\x1b[m\x1b[K,\n'}
+[5.528545] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.528581] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.528611] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/point.h:\x1b[m\x1b[K At global scope:\n'}
+[5.528730] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/point.h:205:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.528767] (slam_gmapping) StderrLine: {'line': b'  205 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.528798] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.528900] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.528944] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.529055] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.529092] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.529180] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:52:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.529222] (slam_gmapping) StderrLine: {'line': b'   52 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.529253] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.529282] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:4\x1b[m\x1b[K,\n'}
+[5.529310] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[5.529339] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.529368] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.529396] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.529423] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h:21:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.529451] (slam_gmapping) StderrLine: {'line': b'   21 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.529478] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.529506] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[5.529540] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.529568] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.529596] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.529623] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:23:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.529651] (slam_gmapping) StderrLine: {'line': b'   23 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.529678] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.529706] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:7\x1b[m\x1b[K,\n'}
+[5.529737] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.529764] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.529792] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.529819] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.529850] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.529877] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.529904] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:7\x1b[m\x1b[K,\n'}
+[5.529931] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.529959] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.529986] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.530013] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/stat.h:145:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.530041] (slam_gmapping) StderrLine: {'line': b'  145 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.530068] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.530711] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:8\x1b[m\x1b[K,\n'}
+[5.530762] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.530796] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.530913] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.530950] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangesensor.h:33:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.530981] (slam_gmapping) StderrLine: {'line': b'   33 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.531009] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.531036] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:9\x1b[m\x1b[K,\n'}
+[5.531146] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.531251] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.531284] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.531314] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.531343] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.531370] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.531397] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:10\x1b[m\x1b[K,\n'}
+[5.531425] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.531453] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.531481] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.531508] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangereading.h:24:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.531540] (slam_gmapping) StderrLine: {'line': b'   24 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.531567] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.531594] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:11\x1b[m\x1b[K,\n'}
+[5.531622] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.531649] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.531675] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.531703] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/configuration.h:15:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.531738] (slam_gmapping) StderrLine: {'line': b'   15 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.531765] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.533010] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[5.533069] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.533103] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.533134] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.533169] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.533198] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.534483] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:5\x1b[m\x1b[K,\n'}
+[5.534537] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.534571] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.534608] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.534637] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.534665] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.534694] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/accessstate.h:6:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.534722] (slam_gmapping) StderrLine: {'line': b'    6 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.534825] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.534928] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.534966] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.534997] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.535025] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:250:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.535053] (slam_gmapping) StderrLine: {'line': b'  250 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.535080] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.535107] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:16\x1b[m\x1b[K,\n'}
+[5.535139] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.535166] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.535193] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/motionmodel.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.535221] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.535248] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.536243] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:6\x1b[m\x1b[K,\n'}
+[5.536298] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.536332] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.536361] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.536389] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.536417] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.536445] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/array2d.h:185:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.536473] (slam_gmapping) StderrLine: {'line': b'  185 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.536500] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.538034] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[5.538098] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.538156] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.538198] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.538230] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.538260] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/map.h:262:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.538382] (slam_gmapping) StderrLine: {'line': b'  262 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.538417] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.538447] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:5\x1b[m\x1b[K,\n'}
+[5.538485] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[5.538520] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.538548] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.538576] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.538603] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.538630] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/autoptr.h:96:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.538658] (slam_gmapping) StderrLine: {'line': b'   96 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.538685] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.542295] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[5.542369] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.542407] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.542438] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.542468] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.542497] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:197:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.542530] (slam_gmapping) StderrLine: {'line': b'  197 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.542559] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.542982] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[5.543049] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.543088] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.543121] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.543151] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:52:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.543181] (slam_gmapping) StderrLine: {'line': b'   52 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.543209] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.543657] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:7\x1b[m\x1b[K,\n'}
+[5.543709] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.543743] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.543773] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.543804] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/utils/stat.h:145:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.543834] (slam_gmapping) StderrLine: {'line': b'  145 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[5.543863] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.544354] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[5.544416] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[5.544451] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:335:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.544488] (slam_gmapping) StderrLine: {'line': b'  335 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.544517] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.549290] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[5.549431] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.549474] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.549506] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:250:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.549546] (slam_gmapping) StderrLine: {'line': b'  250 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.549575] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.549602] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:16\x1b[m\x1b[K,\n'}
+[5.549630] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.549659] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.549686] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/motionmodel.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.549714] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.549746] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.558709] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[5.558788] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/up/oradar_ws/src/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[5.558827] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/up/oradar_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:335:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.558861] (slam_gmapping) StderrLine: {'line': b'  335 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[5.558892] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.627731] (-) TimerEvent: {}
+[5.728256] (-) TimerEvent: {}
+[5.829185] (-) TimerEvent: {}
+[5.929896] (-) TimerEvent: {}
+[6.030311] (-) TimerEvent: {}
+[6.130890] (-) TimerEvent: {}
+[6.231469] (-) TimerEvent: {}
+[6.332214] (-) TimerEvent: {}
+[6.433016] (-) TimerEvent: {}
+[6.533823] (-) TimerEvent: {}
+[6.634383] (-) TimerEvent: {}
+[6.734823] (-) TimerEvent: {}
+[6.835506] (-) TimerEvent: {}
+[6.936209] (-) TimerEvent: {}
+[6.948755] (slam_gmapping) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable transform\x1b[0m\n'}
+[7.036768] (-) TimerEvent: {}
+[7.132862] (slam_gmapping) StdoutLine: {'line': b'[ 75%] Built target transform\n'}
+[7.136968] (-) TimerEvent: {}
+[7.237397] (-) TimerEvent: {}
+[7.338139] (-) TimerEvent: {}
+[7.438757] (-) TimerEvent: {}
+[7.539094] (-) TimerEvent: {}
+[7.639948] (-) TimerEvent: {}
+[7.740739] (-) TimerEvent: {}
+[7.841227] (-) TimerEvent: {}
+[7.941798] (-) TimerEvent: {}
+[8.042460] (-) TimerEvent: {}
+[8.143067] (-) TimerEvent: {}
+[8.243716] (-) TimerEvent: {}
+[8.344465] (-) TimerEvent: {}
+[8.445113] (-) TimerEvent: {}
+[8.545722] (-) TimerEvent: {}
+[8.646138] (-) TimerEvent: {}
+[8.746787] (-) TimerEvent: {}
+[8.847359] (-) TimerEvent: {}
+[8.947811] (-) TimerEvent: {}
+[9.048674] (-) TimerEvent: {}
+[9.149465] (-) TimerEvent: {}
+[9.249834] (-) TimerEvent: {}
+[9.350592] (-) TimerEvent: {}
+[9.451042] (-) TimerEvent: {}
+[9.551846] (-) TimerEvent: {}
+[9.652711] (-) TimerEvent: {}
+[9.753292] (-) TimerEvent: {}
+[9.853742] (-) TimerEvent: {}
+[9.954419] (-) TimerEvent: {}
+[10.055160] (-) TimerEvent: {}
+[10.155588] (-) TimerEvent: {}
+[10.256415] (-) TimerEvent: {}
+[10.343445] (slam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[10.356574] (-) TimerEvent: {}
+[10.457364] (-) TimerEvent: {}
+[10.558000] (-) TimerEvent: {}
+[10.602085] (slam_gmapping) StdoutLine: {'line': b'[100%] Built target slam_gmapping\n'}
+[10.611065] (slam_gmapping) CommandEnded: {'returncode': 0}
+[10.638424] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'install'}
+[10.638683] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/up/oradar_ws/build/slam_gmapping'], 'cwd': '/home/up/oradar_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'up'), ('SSH_AGENT_PID', '1861'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/up/oradar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1682'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'up'), ('JOURNAL_STREAM', '8:59427'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'up'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('INVOCATION_ID', '069b0312c5fc4e14bd2efe3912b235af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b723033_db20_4b51_9975_51cd07e9a034'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/up/oradar_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8bd2ba02ae42c76714b71b3f672dbf7d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/up/oradar_ws/install/openslam_gmapping:/opt/ros/foxy')]), 'shell': False}
+[10.646276] (slam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.646435] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping\n'}
+[10.650595] (slam_gmapping) StdoutLine: {'line': b'-- Set runtime path of "/home/up/oradar_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""\n'}
+[10.650703] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/lib/slam_gmapping/transform\n'}
+[10.651914] (slam_gmapping) StdoutLine: {'line': b'-- Set runtime path of "/home/up/oradar_ws/install/slam_gmapping/lib/slam_gmapping/transform" to ""\n'}
+[10.651990] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/launch\n'}
+[10.652414] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/launch/test_gmapping.launch.py\n'}
+[10.652586] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/launch/gmapping_launch.py\n'}
+[10.652662] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py\n'}
+[10.652699] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping\n'}
+[10.652802] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping\n'}
+[10.652847] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh\n'}
+[10.652990] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv\n'}
+[10.653058] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/environment/path.sh\n'}
+[10.653162] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/environment/path.dsv\n'}
+[10.653285] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/local_setup.bash\n'}
+[10.653430] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/local_setup.sh\n'}
+[10.653553] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/local_setup.zsh\n'}
+[10.653668] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/local_setup.dsv\n'}
+[10.653779] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/package.dsv\n'}
+[10.653957] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping\n'}
+[10.654112] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake\n'}
+[10.654249] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake\n'}
+[10.654350] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/up/oradar_ws/install/slam_gmapping/share/slam_gmapping/package.xml\n'}
+[10.656378] (slam_gmapping) CommandEnded: {'returncode': 0}
+[10.658840] (-) TimerEvent: {}
+[10.692153] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 0}
+[10.692811] (-) EventReactorShutdown: {}
