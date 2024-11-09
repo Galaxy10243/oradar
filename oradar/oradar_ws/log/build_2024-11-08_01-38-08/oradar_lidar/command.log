@@ -1,0 +1,6 @@
+Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/oradar_ros -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/oradar_lidar
+Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/oradar_ros -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/oradar_lidar
+Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/oradar_lidar -- -j8 -l8
+Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/oradar_lidar -- -j8 -l8
+Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/oradar_lidar
+Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/oradar_lidar

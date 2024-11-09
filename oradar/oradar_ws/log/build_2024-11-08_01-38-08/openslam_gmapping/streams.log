@@ -1,0 +1,129 @@
+[0.012s] Invoking command in '/home/up/oradar_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/openslam_gmapping
+[0.063s] -- The C compiler identification is GNU 9.4.0
+[0.102s] -- The CXX compiler identification is GNU 9.4.0
+[0.105s] -- Check for working C compiler: /usr/bin/cc
+[0.165s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.166s] -- Detecting C compiler ABI info
+[0.227s] -- Detecting C compiler ABI info - done
+[0.233s] -- Detecting C compile features
+[0.233s] -- Detecting C compile features - done
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++
+[0.300s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.301s] -- Detecting CXX compiler ABI info
+[0.365s] -- Detecting CXX compiler ABI info - done
+[0.371s] -- Detecting CXX compile features
+[0.371s] -- Detecting CXX compile features - done
+[0.376s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.391s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.391s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.538s] -- Configuring done
+[0.546s] -- Generating done
+[0.548s] -- Build files have been written to: /home/up/oradar_ws/build/openslam_gmapping
+[0.553s] Invoked command in '/home/up/oradar_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/openslam_gmapping
+[0.553s] Invoking command in '/home/up/oradar_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/openslam_gmapping -- -j8 -l8
+[0.584s] [35m[1mScanning dependencies of target utils[0m
+[0.584s] [35m[1mScanning dependencies of target sensor_base[0m
+[0.593s] [  4%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o[0m
+[0.594s] [  9%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o[0m
+[0.596s] [ 13%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o[0m
+[0.597s] [ 18%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o[0m
+[0.734s] [ 22%] [32m[1mLinking CXX static library libsensor_base.a[0m
+[0.763s] [ 22%] Built target sensor_base
+[0.772s] [35m[1mScanning dependencies of target sensor_range[0m
+[0.772s] [35m[1mScanning dependencies of target sensor_odometry[0m
+[0.782s] [ 40%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o[0m
+[0.782s] [ 40%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o[0m
+[0.782s] [ 40%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o[0m
+[0.782s] [ 40%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o[0m
+[0.799s] [ 45%] [32m[1mLinking CXX static library libutils.a[0m
+[0.832s] [ 45%] Built target utils
+[0.973s] [ 50%] [32m[1mLinking CXX static library libsensor_odometry.a[0m
+[0.999s] [ 50%] Built target sensor_odometry
+[1.052s] [ 54%] [32m[1mLinking CXX static library libsensor_range.a[0m
+[1.079s] [ 54%] Built target sensor_range
+[1.088s] [35m[1mScanning dependencies of target scanmatcher[0m
+[1.099s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o[0m
+[1.099s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o[0m
+[1.099s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o[0m
+[1.099s] [ 72%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o[0m
+[1.901s] [ 77%] [32m[1mLinking CXX static library libscanmatcher.a[0m
+[1.929s] [ 77%] Built target scanmatcher
+[1.938s] [35m[1mScanning dependencies of target gridfastslam[0m
+[1.949s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o[0m
+[1.949s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o[0m
+[1.949s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o[0m
+[1.949s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o[0m
+[2.808s] [100%] [32m[1mLinking CXX static library libgridfastslam.a[0m
+[2.838s] [100%] Built target gridfastslam
+[2.848s] Invoked command in '/home/up/oradar_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/openslam_gmapping -- -j8 -l8
+[2.872s] Invoking command in '/home/up/oradar_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/openslam_gmapping
+[2.880s] -- Install configuration: ""
+[2.880s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include/
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log/configuration.h
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/log/sensorlog.h
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/macro_params.h
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/autoptr.h
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/stat.h
+[2.881s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/gvalues.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/commandline.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/utils/point.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range
+[2.882s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/particlefilter
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid
+[2.883s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/harray2d.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/map.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/accessstate.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/grid/array2d.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping
+[2.884s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv
+[2.885s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/package.xml
+[2.886s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libgridfastslam.a
+[2.887s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libscanmatcher.a
+[2.887s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[2.887s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[2.887s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_base.a
+[2.888s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[2.888s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[2.888s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_odometry.a
+[2.888s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libsensor_range.a
+[2.888s] -- Installing: /home/up/oradar_ws/install/openslam_gmapping/lib/libutils.a
+[2.888s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[2.888s] -- Up-to-date: /home/up/oradar_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[2.890s] Invoked command in '/home/up/oradar_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/openslam_gmapping

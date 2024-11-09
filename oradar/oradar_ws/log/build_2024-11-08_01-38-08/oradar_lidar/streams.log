@@ -1,0 +1,123 @@
+[0.014s] Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/oradar_ros -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/oradar_lidar
+[0.032s] =============================================================
+[0.033s] -- ROS Not Found, Ros Support is turned Off!
+[0.033s] =============================================================
+[0.046s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.138s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.165s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.246s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.275s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.275s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.362s] =============================================================
+[0.362s] -- ROS2 Found. ROS2 Support is turned On!
+[0.362s] =============================================================
+[0.362s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.429s] CMake Deprecation Warning at sdk/CMakeLists.txt:36 (cmake_policy):
+[0.429s]   The OLD behavior for policy CMP0053 will be removed from a future version
+[0.429s]   of CMake.
+[0.429s] 
+[0.429s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[0.429s]   policies are deprecated and that a policy should be set to OLD only under
+[0.429s]   specific short-term circumstances.  Projects should be ported to the NEW
+[0.429s]   behavior and not rely on setting a policy to OLD.
+[0.429s] 
+[0.429s] 
+[0.429s] CMake Deprecation Warning at sdk/CMakeLists.txt:39 (cmake_policy):
+[0.429s]   The OLD behavior for policy CMP0037 will be removed from a future version
+[0.429s]   of CMake.
+[0.429s] 
+[0.429s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[0.429s]   policies are deprecated and that a policy should be set to OLD only under
+[0.429s]   specific short-term circumstances.  Projects should be ported to the NEW
+[0.429s]   behavior and not rely on setting a policy to OLD.
+[0.429s] 
+[0.429s] 
+[0.429s] CMake Deprecation Warning at sdk/CMakeLists.txt:42 (cmake_policy):
+[0.429s]   The OLD behavior for policy CMP0043 will be removed from a future version
+[0.429s]   of CMake.
+[0.429s] 
+[0.429s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[0.429s]   policies are deprecated and that a policy should be set to OLD only under
+[0.430s]   specific short-term circumstances.  Projects should be ported to the NEW
+[0.430s]   behavior and not rely on setting a policy to OLD.
+[0.430s] 
+[0.430s] 
+[0.430s] -- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+[0.444s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.452s] CMake Deprecation Warning at sdk/cmake/install_package.cmake:101 (cmake_policy):
+[0.452s]   The OLD behavior for policy CMP0026 will be removed from a future version
+[0.452s]   of CMake.
+[0.452s] 
+[0.452s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[0.452s]   policies are deprecated and that a policy should be set to OLD only under
+[0.452s]   specific short-term circumstances.  Projects should be ported to the NEW
+[0.452s]   behavior and not rely on setting a policy to OLD.
+[0.452s] Call Stack (most recent call first):
+[0.452s]   sdk/CMakeLists.txt:105 (install_package)
+[0.452s] 
+[0.453s] 
+[0.496s] -- Configuring done
+[0.514s] -- Generating done
+[0.518s] -- Build files have been written to: /home/up/oradar_ws/build/oradar_lidar
+[0.528s] Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/up/oradar_ws/src/oradar_ros -DCMAKE_INSTALL_PREFIX=/home/up/oradar_ws/install/oradar_lidar
+[0.531s] Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/oradar_lidar -- -j8 -l8
+[0.576s] [ 60%] Built target oradar_sdk
+[0.593s] [ 70%] Built target blocking_c_api_test
+[0.594s] [ 80%] Built target non-blocking_test
+[0.595s] [ 90%] Built target blocking_test
+[0.601s] [100%] Built target oradar_scan
+[0.612s] Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/up/oradar_ws/build/oradar_lidar -- -j8 -l8
+[0.652s] Invoking command in '/home/up/oradar_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/oradar_lidar
+[0.661s] -- Install configuration: "RELEASE"
+[0.661s] -- Execute custom install script
+[0.661s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/blocking_test
+[0.661s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/non-blocking_test
+[0.662s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/bin/blocking_c_api_test
+[0.662s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/datatype.h
+[0.662s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/locker.h
+[0.662s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/thread.h
+[0.662s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/timer.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/typedef.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/utils.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/base/v8stdint.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/common/ChannelDevice.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/math/angles.h
+[0.663s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/ActiveSocket.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/PassiveSocket.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/SimpleSocket.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/network/StatTimer.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/common.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/serial.h
+[0.664s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ord_lidar_driver.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/ordlidar_protocol.h
+[0.665s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h
+[0.666s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/lib/liboradar_sdk.a
+[0.666s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan
+[0.666s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch
+[0.666s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_gmapping.launch.py
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar
+[0.667s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar
+[0.668s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh
+[0.668s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv
+[0.668s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh
+[0.668s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv
+[0.668s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash
+[0.669s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh
+[0.669s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh
+[0.669s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv
+[0.669s] -- Symlinking: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/package.dsv
+[0.679s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar
+[0.679s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake
+[0.679s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake
+[0.679s] -- Up-to-date symlink: /home/up/oradar_ws/install/oradar_lidar/share/oradar_lidar/package.xml
+[0.682s] Invoked command in '/home/up/oradar_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/up/oradar_ws/build/oradar_lidar
